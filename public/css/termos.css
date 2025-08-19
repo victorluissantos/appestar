@@ -1,0 +1,210 @@
+/* ===== ESTILOS PARA PÁGINA DE TERMOS ===== */
+
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.terms-content {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.terms-section {
+    padding: 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.terms-section:last-child {
+    border-bottom: none;
+}
+
+.terms-section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.terms-section p {
+    line-height: 1.7;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+.terms-section ul {
+    padding-left: 1.5rem;
+}
+
+.terms-section li {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.terms-section strong {
+    color: var(--primary-dark);
+}
+
+.terms-footer {
+    background: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+}
+
+.back-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.back-button .btn {
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.back-button .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .terms-header {
+        padding: 2rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .terms-content {
+        margin: 0 1rem;
+    }
+    
+    .terms-section {
+        padding: 1.5rem;
+    }
+    
+    .terms-section h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Estilos para links nos termos */
+.terms-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.terms-section a:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+/* Estilos para listas */
+.terms-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.terms-section ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.terms-section ul li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Estilos para o cabeçalho da página */
+.terms-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.terms-header .lead {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.terms-header .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Estilos para o card principal */
+.terms-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.terms-card .card-body {
+    padding: 0;
+}
+
+/* Estilos para seções específicas */
+.terms-section.contact-info {
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.terms-section.contact-info ul {
+    padding-left: 0;
+}
+
+.terms-section.contact-info li {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.terms-section.contact-info li:before {
+    display: none;
+}
+
+.terms-section.contact-info strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Estilos para o separador */
+.terms-separator {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    margin: 2rem 0;
+}
+
+/* Estilos para o rodapé dos termos */
+.terms-footer-content {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.terms-footer-content strong {
+    color: white;
+}
+
+.terms-footer-content .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+} 

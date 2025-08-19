@@ -1,0 +1,77 @@
+# ===== APP ESTAR - GITIGNORE =====
+
+# Dependências Composer
+/vendor/
+composer.lock
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.production
+
+# Arquivos de configuração Docker
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+
+# Pasta IaC (Infrastructure as Code)
+/IaC/
+/iac/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+log.txt
+
+# Cache
+cache/
+tmp/
+temp/
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+*.orig
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de build
+build/
+dist/
+node_modules/
+
+# Arquivos de teste
+/tests/
+phpunit.xml
+.phpunit.result.cache
+
+# Arquivos de configuração local
+config.local.php
+database.local.php
+
+# Arquivos de upload
+uploads/
+public/uploads/
+
+# Arquivos de sessão
+sessions/
+
+# Arquivos de cache do navegador
+public/cache/
+public/temp/ 

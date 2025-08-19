@@ -1,0 +1,35 @@
+{
+    "name": "appestar/estacionamento-digital-docker",
+    "description": "Aplicativo de estacionamento rotativo digital - Versão Docker",
+    "type": "project",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppEstar\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"if (!is_dir('public/css')) mkdir('public/css', 0755, true);\"",
+            "php -r \"if (!is_dir('public/js')) mkdir('public/js', 0755, true);\"",
+            "php -r \"if (!is_dir('public/fonts')) mkdir('public/fonts', 0755, true);\"",
+            "php -r \"echo 'Diretórios criados com sucesso!';\""
+        ],
+        "docker-setup": [
+            "php -r \"echo 'Configuração Docker concluída!';\"",
+            "php -r \"echo 'Execute: docker-compose up -d';\"",
+            "php -r \"echo 'Acesse: http://localhost:8080';\""
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.19"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
