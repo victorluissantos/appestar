@@ -17,11 +17,11 @@ include 'includes/header.php';
                     estacionamento rotativo de forma rápida e segura.
                 </p>
                 <div class="d-flex gap-3 flex-wrap">
-                    <a href="#download" class="btn btn-primary btn-lg">
+                    <a href="https://play.google.com/store/apps/details?id=br.com.clan.appestar.app" class="btn btn-google-play btn-lg">
                         <i class="bi bi-google-play me-2"></i>
                         Baixar na Play Store
                     </a>
-                    <a href="#download" class="btn btn-outline-primary btn-lg">
+                    <a href="#download-qr" class="btn btn-app-store btn-lg">
                         <i class="bi bi-apple me-2"></i>
                         Baixar na App Store
                     </a>
@@ -72,6 +72,85 @@ include 'includes/header.php';
                     </div>
                     <h2 class="h3 fw-bold text-primary">4.8</h2>
                     <p class="text-muted">Avaliação média</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download com QR Code -->
+<section id="download-qr" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="display-5 fw-bold text-primary mb-3">Baixe o AppEstar</h2>
+                <p class="lead text-muted">
+                    Escaneie o QR Code com seu smartphone para baixar o aplicativo diretamente da loja de aplicativos
+                </p>
+            </div>
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center mb-4">
+                <div class="qr-code-container mx-auto" style="max-width: 300px;">
+                    <img src="public/qrcode.png" alt="QR Code AppEstar" class="img-fluid" style="max-width: 250px;">
+                    <p class="text-muted mt-3 mb-4">Aponte a câmera do seu celular para este QR Code</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center">
+                        <a href="#" class="btn btn-google-play btn-lg">
+                            <i class="bi bi-google-play me-2"></i>
+                            Google Play
+                        </a>
+                        <a href="#" class="btn btn-app-store btn-lg">
+                            <i class="bi bi-apple me-2"></i>
+                            App Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="download-features">
+                    <h3 class="fw-bold text-primary mb-4">Por que baixar o AppEstar?</h3>
+                    
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-shield-check text-success" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">100% Seguro</h5>
+                            <p class="text-muted mb-0">App oficial da Prefeitura de Curitiba com máxima segurança</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-lightning text-warning" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Super Rápido</h5>
+                            <p class="text-muted mb-0">Pague estacionamento em menos de 30 segundos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-currency-dollar text-success" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Sem Taxas</h5>
+                            <p class="text-muted mb-0">Sem cobranças adicionais ou surpresas na fatura</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item d-flex align-items-start mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-phone text-primary" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Sempre Disponível</h5>
+                            <p class="text-muted mb-0">Use de qualquer lugar, a qualquer hora do dia</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,11 +335,11 @@ include 'includes/header.php';
             Baixe o AppEstar agora e experimente a comodidade do estacionamento digital
         </p>
         <div class="d-flex gap-3 flex-wrap justify-content-center">
-            <a href="#download" class="btn btn-light btn-lg">
+            <a href="https://play.google.com/store/apps/details?id=br.com.clan.appestar.app" class="btn btn-light btn-lg">
                 <i class="bi bi-google-play me-2"></i>
                 Baixar na Play Store
             </a>
-            <a href="#download" class="btn btn-outline-light btn-lg">
+            <a href="#download-qr" class="btn btn-outline-light btn-lg">
                 <i class="bi bi-apple me-2"></i>
                 Baixar na App Store
             </a>

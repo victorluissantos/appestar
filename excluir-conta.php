@@ -18,6 +18,39 @@ include 'includes/header.php';
                 <p class="text-muted">Solicite a exclusão de sua conta e dados pessoais</p>
             </div>
 
+            <!-- Seção do QR Code para Download do App -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body text-center p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h4 class="text-primary mb-3">
+                                <i class="bi bi-phone me-2"></i>
+                                Baixe o AppEstar
+                            </h4>
+                            <p class="text-muted mb-3">
+                                Escaneie o QR Code com seu smartphone para baixar o aplicativo AppEstar diretamente da loja de aplicativos.
+                            </p>
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-google-play me-2 mb-2">
+                                    <i class="bi bi-google-play me-2"></i>
+                                    Google Play
+                                </a>
+                                <a href="#" class="btn btn-app-store mb-2">
+                                    <i class="bi bi-apple me-2"></i>
+                                    App Store
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="qr-code-container">
+                                <img src="public/qrcode.png" alt="QR Code AppEstar" class="img-fluid" style="max-width: 200px;">
+                                <p class="text-muted mt-2 small">Aponte a câmera do seu celular para este QR Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Aviso Importante -->
             <div class="alert alert-warning border-0 shadow-sm mb-4">
                 <div class="d-flex align-items-center">

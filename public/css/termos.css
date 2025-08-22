@@ -79,6 +79,47 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+/* ===== ESTILOS PARA SEÇÃO DO QR CODE ===== */
+
+.qr-code-container {
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    border: 2px dashed #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.qr-code-container:hover {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+    transform: scale(1.02);
+}
+
+.qr-code-container img {
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.qr-code-container:hover img {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Botões de download */
+.btn-google-play {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-app-store {
+    background: linear-gradient(135deg, #000000, #333333);
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .terms-header {
@@ -96,6 +137,14 @@
     
     .terms-section h2 {
         font-size: 1.1rem;
+    }
+    
+    .qr-code-container {
+        margin-top: 1rem;
+    }
+    
+    .qr-code-container img {
+        max-width: 150px !important;
     }
 }
 

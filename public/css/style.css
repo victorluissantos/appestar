@@ -22,6 +22,78 @@
     box-sizing: border-box;
 }
 
+/* Garantir que o texto seja selecionável */
+body, p, h1, h2, h3, h4, h5, h6, span, div, a, li, td, th, label, input, textarea, select {
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+/* Regras específicas para elementos da hero-section */
+.hero-section h1,
+.hero-section p,
+.hero-section .lead,
+.hero-section .display-4,
+.hero-section .display-5,
+.hero-section .text-primary,
+.hero-section .text-muted,
+.hero-section .fw-bold,
+.hero-section .mb-4 {
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    position: relative;
+    z-index: 10;
+}
+
+/* Forçar seleção de texto em todos os elementos da hero-section */
+.hero-section * {
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+/* Exceções apenas para botões e elementos interativos */
+.hero-section .btn,
+.hero-section .btn *,
+.hero-section button,
+.hero-section input[type="button"],
+.hero-section input[type="submit"] {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+/* Exceções para elementos que não devem ser selecionáveis */
+button, .btn, .btn *, input[type="button"], input[type="submit"], input[type="reset"] {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+/* Sobrescrever qualquer regra do Bootstrap que possa estar interferindo */
+.hero-section .display-4,
+.hero-section .lead,
+.hero-section p,
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.hero-section h4,
+.hero-section h5,
+.hero-section h6 {
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    position: relative;
+    z-index: 999 !important;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -109,6 +181,24 @@ body {
     overflow: hidden;
 }
 
+.hero-section * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Garantir que o conteúdo de texto seja sempre selecionável */
+.hero-section .container,
+.hero-section .row,
+.hero-section .col-lg-6,
+.hero-section .col-lg-6 * {
+    position: relative;
+    z-index: 10;
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
+
 .hero-section::before {
     content: '';
     position: absolute;
@@ -118,6 +208,12 @@ body {
     height: 100%;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .hero-section h1 {
@@ -125,6 +221,21 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: relative;
+    z-index: 10;
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+.hero-section .lead {
+    position: relative;
+    z-index: 10;
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
 }
 
 /* Gradiente verde para botões */
@@ -165,7 +276,7 @@ body {
 }
 
 .stat-image {
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
 }
@@ -604,4 +715,107 @@ a:hover {
 
 .shadow {
     box-shadow: var(--box-shadow-lg) !important;
+}
+
+/* ===== SEÇÃO DE DOWNLOAD COM QR CODE ===== */
+
+.download-features .feature-item {
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.download-features .feature-item:hover {
+    background-color: rgba(40, 167, 69, 0.05);
+    transform: translateX(5px);
+}
+
+.download-features .feature-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(40, 167, 69, 0.1);
+}
+
+/* Botões de download personalizados */
+.btn-google-play {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-google-play:hover {
+    background: linear-gradient(135deg, #3367d6, #2d8f47);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(66, 133, 244, 0.3);
+}
+
+.btn-app-store {
+    background: linear-gradient(135deg, #000000, #333333);
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-app-store:hover {
+    background: linear-gradient(135deg, #1a1a1a, #404040);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/* Container do QR Code */
+.qr-code-container {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 20px;
+    border: 3px dashed #dee2e6;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-container:hover {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.qr-code-container img {
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.qr-code-container:hover img {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* ===== RESPONSIVIDADE ADICIONAL ===== */
+@media (max-width: 768px) {
+    .qr-code-container {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .qr-code-container img {
+        max-width: 200px !important;
+    }
+    
+    .download-features .feature-item {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .download-features .feature-icon {
+        margin: 0 auto 1rem auto;
+    }
 } 
