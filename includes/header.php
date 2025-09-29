@@ -28,7 +28,7 @@ $page_description = isset($page_description) ? $page_description : 'App oficial 
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.php">
                 <img src="public/icon/app_icon.png" alt="appEstar Logo" height="40" class="me-2">
-                appEstar
+                AppEstar
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

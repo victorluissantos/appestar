@@ -15,10 +15,9 @@
                 </div>
                 <div class="col-md-4 text-md-end">
                     <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/clansoftware/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/64775060/admin/dashboard/" target="_blank" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/clansoftware/" target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
             </div>

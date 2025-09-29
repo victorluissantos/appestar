@@ -31,7 +31,7 @@ include 'includes/header.php';
                                 Escaneie o QR Code com seu smartphone para baixar o aplicativo AppEstar diretamente da loja de aplicativos.
                             </p>
                             <div class="d-grid gap-2 d-md-block">
-                                <a href="#" class="btn btn-google-play me-2 mb-2">
+                                <a href="https://play.google.com/store/apps/details?id=br.com.clan.appestar.app" class="btn btn-google-play me-2 mb-2">
                                     <i class="bi bi-google-play me-2"></i>
                                     Google Play
                                 </a>

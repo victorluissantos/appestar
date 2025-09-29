@@ -96,7 +96,7 @@ include 'includes/header.php';
                     <img src="public/qrcode.png" alt="QR Code AppEstar" class="img-fluid" style="max-width: 250px;">
                     <p class="text-muted mt-3 mb-4">Aponte a câmera do seu celular para este QR Code</p>
                     <div class="d-flex gap-3 flex-wrap justify-content-center">
-                        <a href="#" class="btn btn-google-play btn-lg">
+                        <a href="https://play.google.com/store/apps/details?id=br.com.clan.appestar.app" class="btn btn-google-play btn-lg">
                             <i class="bi bi-google-play me-2"></i>
                             Google Play
                         </a>
@@ -280,7 +280,7 @@ include 'includes/header.php';
                     Baixe agora e comece a usar o estacionamento rotativo digital
                 </p>
                 <div class="d-flex gap-3 flex-wrap justify-content-center">
-                    <a href="#" class="btn btn-primary btn-lg">
+                    <a href="https://play.google.com/store/apps/details?id=br.com.clan.appestar.app" class="btn btn-primary btn-lg">
                         <i class="bi bi-google-play me-2"></i>
                         Google Play
                     </a>
