@@ -21,6 +21,20 @@ $page_description = isset($page_description) ? $page_description : 'App oficial 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="public/icon/app_icon_512x512.png">
     <link rel="apple-touch-icon" href="public/icon/app_icon_512x512.png">
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5f7cc349f0e7167d0016b7af/1j6g8grh6';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 </head>
 <body>
     <!-- Header/Navigation -->
